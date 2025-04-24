@@ -1,0 +1,25 @@
+# Ignorar archivos generados por Composer
+vendor/
+
+# Ignorar archivos generados por Node.js
+node_modules/
+webroot/css/tailwind.css
+
+# Ignorar archivos de configuraci¢n sensibles
+config/app_local.php
+
+# Ignorar logs y archivos temporales
+logs/
+tmp/*
+!tmp/.gitkeep
+
+# Ignorar archivos de entorno
+.env
+
+# Ignorar archivos de Composer y Node.js generados
+composer.lock
+package-lock.json
+
+# Ignorar archivos de pruebas y cach‚
+tests/_output/*
+tests/_support/_generated/*
