@@ -49,6 +49,10 @@
         */
         $routes->setRouteClass(DashedRoute::class);
 
+        $routes->connect('/login', ['controller' => 'Users', 'action' => 'login'], ['_name' => 'login']);
+        $routes->connect('/dashboard', ['controller' => 'Dashboard', 'action' => 'index'], ['_name' => 'adminDashboard']);
+        
+
         $routes->scope('/', function (RouteBuilder $builder): void {
             /*
             * Here, we are connecting '/' (base path) to a controller called 'Pages',
@@ -56,7 +60,7 @@
             * to use (in this case, templates/Pages/home.php)...
             */
             $builder->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
-
+            $builder->connect('/dashboard', ['controller' => 'Pages', 'action' => 'display', 'dashboard']);
             /*
             * ...and connect the rest of 'Pages' controller's URLs.
             */
@@ -68,6 +72,8 @@
                 'action' => 'display',
                 'formulario'
             ]);
+
+            
 
             
 

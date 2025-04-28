@@ -7,8 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "dev": "tailwindcss -i webroot/css/app.css -o webroot/css/tailwind.css --watch",
-    "build": "tailwindcss -i webroot/css/app.css -o webroot/css/tailwind.css --minify"
+    "dev": "tailwindcss -i webroot/css/app.css -o webroot/css/tailwind-input.css --watch",
+    "build-css": "tailwindcss -i ./webroot/css/tailwind-input.css -o ./webroot/css/tailwind-output.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -18,8 +18,8 @@
     "caniuse-lite": "^1.0.30001707"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.3"
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17"
   }
 }

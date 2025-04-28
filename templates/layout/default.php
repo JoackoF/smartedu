@@ -18,6 +18,8 @@
     
     <!-- Opcional: Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/tailwind-output.css">
+
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -31,7 +33,6 @@
             </a>
             <div class="space-x-4">
                 <a href="#" class="hover:text-blue-200 transition">Inicio</a>
-                <a href="#" class="hover:text-blue-200 transition">Documentación</a>
             </div>
         </div>
     </nav>
